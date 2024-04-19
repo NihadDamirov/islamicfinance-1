@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+    </style>
 </head>
 <body>
     <div class="account-parametrs-container">
@@ -16,7 +18,7 @@
 
             <div>
                 <nav>
-                    <a href="/index.html"><img src="/pubic/home-page-icon.png" alt=""> Ana Səhifə</a>
+                    <a href="/homepage.html"><img src="/pubic/home-page-icon.png" alt="" > Ana Səhifə</a>
                     <a href="/human-resources.html"><img src="/pubic/resources-icon.png" alt="">İnsan Resursları</a>
                     <a href="/sale.html"><img src="/pubic/sale-icon.png" alt="">Satışlar</a>
                     <a href="/accounting.html"><img src="/pubic/accounting-icon.png" alt="">Mühasibat</a>
@@ -34,8 +36,15 @@
 
                 <div class="profile">
                     <img src="/pubic/profile-photo.svg" id="profile-photo" alt="">
-                    <p>Əliyev Fərid</p>
+                    <p style="display: flex; gap: 10px;" id="profile-name">Əliyev Fərid <img src="/pubic/profile-photo-vector.svg" alt=""></p>
+            
+                    <div class="menu" id="menu" style="z-index: 1;">
+                            <a href="">Hesab parametrləri</a>
+                            <a href="">Ümumi parametrlər</a>
+                            <a href="">Hesabdan çıxış</a>
+                    </div>
                 </div>
+            
             </div>
 
             <div class="div-color"></div>
@@ -60,11 +69,11 @@
                     </div>
 
                     <div class="inputs">
-                        <input type="text" >
-                        <input type="text" >
-                        <input type="number">
-                        <input type="text" >
-                        <input type="text" >
+                        <input type="text" placeholder="Əliyev Fərid Kərim" >
+                        <input type="text" placeholder="farid_02">
+                        <input type="number" placeholder="+994702545666">
+                        <input type="text" placeholder="+994772215646">
+                        <input type="text" placeholder="aliyef_farid@gmail.com">
                     </div>
                     </div>
 
@@ -93,10 +102,25 @@
                 </div>
 
                 <div class="man-photo">
-                    <img src="/pubic/man-photo.svg" alt="">
+                    <div style="position: relative;">
+                        <img src="/pubic/man-photo.svg" alt="">
+                        <div style="position: absolute; bottom: 14px; right: 14px">
+                            <img src="/pubic/edit-icon.svg" alt="">
+                            <img src="/pubic/delete-icon.svg" alt="">
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="buttons-div" style="position: absolute; bottom: 28px; right: 28px;">
+                <button class="go-back">Geri qayıt</button>
+                <button class="save">Yadda saxla</button>
             </div>
         </div>
     </div>
+
+    
+    <script src="/app.js"></script>
+    <script src="/nav.js"></script>
 </body>
 </html>
